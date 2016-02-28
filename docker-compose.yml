@@ -1,0 +1,6 @@
+# docker run -P -ti --rm -v $PWD/workdir:/.mldonkey hervenicol/mldonkey /mlnet.static
+mldonkey:
+  image: "hervenicol/mldonkey"
+  volumes:
+     - "./workdir:/.mldonkey"
+  command: "/mlnet.static"
