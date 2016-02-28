@@ -1,9 +1,3 @@
-#/etc/init.d/mldonkey stop
-#rm distrib/mlnet.log
-#tar cvjpf distrib_060630.tar.bz2 distrib
-#mv distrib distrib_060630
-#tar xvjpf mldonkey-2.7.7.tar.bz2
-#cd mldonkey-2.7.7
 #./configure
 #make
 #make utils
@@ -15,8 +9,6 @@
 #cp -rp ../distrib_060630/*.ini .
 #cd ..
 #chown -R mldonkey:users distrib
-#/etc/init.d/mldonkey start
-#
 
 FROM debian:jessie
 
@@ -58,4 +50,3 @@ CMD ./configure --enable-upnp-natpmp && \
     echo "127.0.0.1       localhost       localhost.localdomain" >> ${DISTRIB_DIR}/etc/hosts && \
     echo "nameserver 8.8.8.8 >> ${DISTRIB_DIR}/etc/resolv.conf"
 
-#EXPOSE 4000 4080 19040 19044

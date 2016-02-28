@@ -12,7 +12,7 @@ Building this container is made through these steps:
 
 To run mlnet:
 
- docker run -P -ti --rm -v $PWD/workdir:/.mldonkey hervenicol/mldonkey:0.1 /mlnet.static
+ docker run -P -ti --rm -v $PWD/workdir:/.mldonkey hervenicol/mldonkey /mlnet.static
 
 Setup:
 
